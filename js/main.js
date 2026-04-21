@@ -6,7 +6,6 @@
 const EMAILJS_SERVICE_ID  = 'service_rs3sgpo';
 const EMAILJS_TEMPLATE_ID = 'xq9xqgm';
 const EMAILJS_PUBLIC_KEY  = '-QkLUyFo_yuDCYU2V';
-
 // --- Menú hamburguesa ---
 const hamburger = document.getElementById('hamburger');
 const navMobile = document.getElementById('navMobile');
