@@ -73,16 +73,9 @@ if (contactForm && successMsg) {
     try {
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
 
-      // Éxito — mostrar mensaje y abrir WhatsApp
+      // Éxito — mostrar mensaje de confirmación
       contactForm.style.display = 'none';
       successMsg.style.display  = 'block';
-
-      const waMsg = encodeURIComponent(
-        `Hola! Me llamo ${nombre}.\nMi negocio es: ${negocio}\nQuiero saber cómo conseguir más clientes.`
-      );
-      setTimeout(() => {
-        window.open(`https://wa.me/5491100000000?text=${waMsg}`, '_blank');
-      }, 1200);
 
     } catch (err) {
       console.error('EmailJS error:', err);
