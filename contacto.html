@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — AgencyLead</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Agency<span>Lead</span></a>
+      <div class="nav-links">
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="contacto.html" class="btn btn-primary nav-cta" style="background:#25d366;">💬 WhatsApp</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="portafolio.html">Portafolio</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="padding-top:160px;padding-bottom:60px;text-align:center;">
+    <div class="container">
+      <div class="badge">Hablemos</div>
+      <h1>El primer paso para<br><span class="text-accent">conseguir más clientes</span></h1>
+      <p style="max-width:520px;margin:20px auto 0;font-size:1.15rem;">Contanos sobre tu negocio. En menos de 2 horas tenés respuesta con un diagnóstico inicial gratuito.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO PRINCIPAL -->
+  <section style="padding-top:40px;">
+    <div class="container">
+      <div class="grid-2" style="gap:48px;align-items:start;">
+
+        <!-- FORMULARIO -->
+        <div class="card" style="padding:40px;">
+          <h3 style="margin-bottom:8px;">Completá el formulario</h3>
+          <p style="font-size:0.9rem;margin-bottom:28px;">Te respondemos por WhatsApp con un diagnóstico personalizado.</p>
+
+          <form id="contactForm">
+            <div class="form-group">
+              <label>Tu nombre *</label>
+              <input type="text" placeholder="Juan García" required />
+            </div>
+            <div class="form-group">
+              <label>WhatsApp *</label>
+              <input type="tel" placeholder="+54 9 11 0000 0000" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="juan@tunegocio.com" />
+            </div>
+            <div class="form-group">
+              <label>¿A qué se dedica tu negocio? *</label>
+              <input type="text" placeholder="Ej: Clínica odontológica, tienda online, consultoría..." required />
+            </div>
+            <div class="form-group">
+              <label>¿Qué servicio te interesa?</label>
+              <select>
+                <option value="">Seleccioná una opción</option>
+                <option>Landing page</option>
+                <option>Campañas Meta Ads</option>
+                <option>Google Ads</option>
+                <option>Embudo de ventas completo</option>
+                <option>Consultoría de marketing</option>
+                <option>No sé, necesito orientación</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>¿Cuál es tu presupuesto mensual en marketing?</label>
+              <select>
+                <option value="">Seleccioná una opción</option>
+                <option>Menos de $200 USD</option>
+                <option>$200 - $500 USD</option>
+                <option>$500 - $1.500 USD</option>
+                <option>$1.500 - $5.000 USD</option>
+                <option>Más de $5.000 USD</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>¿Algo más que quieras contarnos?</label>
+              <textarea placeholder="Contanos tu situación actual, qué intentaste antes, cuál es tu objetivo..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.05rem;padding:16px;">
+              Enviar y recibir diagnóstico →
+            </button>
+          </form>
+
+          <!-- Mensaje de éxito (oculto) -->
+          <div id="successMsg" style="display:none;text-align:center;padding:40px 0;">
+            <div style="font-size:3rem;margin-bottom:16px;">✅</div>
+            <h3>¡Recibimos tu mensaje!</h3>
+            <p style="margin-top:12px;">Te contactamos por WhatsApp en las próximas 2 horas con tu diagnóstico.</p>
+            <a href="https://wa.me/595976261267?text=Hola!%20Acabo%20de%20completar%20el%20formulario%20en%20su%20web" target="_blank" class="btn btn-whatsapp mt-32" style="display:inline-flex;">💬 También podés escribirnos ahora</a>
+          </div>
+        </div>
+
+        <!-- INFO LATERAL -->
+        <div style="display:flex;flex-direction:column;gap:24px;">
+
+          <!-- WhatsApp destacado -->
+          <div style="background:#25d36615;border:1px solid #25d36644;border-radius:var(--radius-lg);padding:32px;text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:12px;">💬</div>
+            <h3 style="color:#25d366;">Respuesta más rápida<br>por WhatsApp</h3>
+            <p style="margin-top:12px;font-size:0.95rem;">Si querés respuesta inmediata, escribinos directo. Estamos disponibles de lunes a viernes de 9 a 19hs.</p>
+            <a href="https://wa.me/595976261267?text=Hola!%20Quiero%20saber%20cómo%20conseguir%20más%20clientes%20para%20mi%20negocio" target="_blank" class="btn btn-whatsapp mt-24" style="display:inline-flex;width:100%;justify-content:center;">
+              💬 Escribir ahora
+            </a>
+          </div>
+
+          <!-- Qué esperar -->
+          <div class="card" style="padding:28px;">
+            <h3 style="margin-bottom:20px;">¿Qué pasa después?</h3>
+            <div style="display:flex;flex-direction:column;gap:16px;">
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div class="step-number" style="width:32px;height:32px;font-size:0.85rem;flex-shrink:0;">1</div>
+                <div>
+                  <strong style="color:#f1f0f5;font-size:0.95rem;">Revisamos tu formulario</strong>
+                  <p style="font-size:0.85rem;margin-top:2px;">En menos de 2 horas un especialista lee tu situación.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div class="step-number" style="width:32px;height:32px;font-size:0.85rem;flex-shrink:0;">2</div>
+                <div>
+                  <strong style="color:#f1f0f5;font-size:0.95rem;">Te enviamos un diagnóstico</strong>
+                  <p style="font-size:0.85rem;margin-top:2px;">Por WhatsApp: qué oportunidad vemos en tu negocio y qué haríamos.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div class="step-number" style="width:32px;height:32px;font-size:0.85rem;flex-shrink:0;">3</div>
+                <div>
+                  <strong style="color:#f1f0f5;font-size:0.95rem;">Llamada de 30 minutos</strong>
+                  <p style="font-size:0.85rem;margin-top:2px;">Si tiene sentido avanzar, agendamos una llamada gratuita para ver detalles.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div class="step-number" style="width:32px;height:32px;font-size:0.85rem;flex-shrink:0;">4</div>
+                <div>
+                  <strong style="color:#f1f0f5;font-size:0.95rem;">Propuesta y arranque</strong>
+                  <p style="font-size:0.85rem;margin-top:2px;">Propuesta concreta y si acordamos, lanzamos en 48 horas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Garantía -->
+          <div class="card" style="padding:28px;border-color:#7c3aed55;">
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <div style="font-size:1.8rem;flex-shrink:0;">🛡️</div>
+              <div>
+                <h3 style="font-size:1rem;">Sin presión, sin compromiso</h3>
+                <p style="font-size:0.9rem;margin-top:8px;">El diagnóstico inicial es gratuito. Si después de hablar sentís que no es para vos, no hay ningún problema. No hacemos venta agresiva.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ rápido -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="grid-2" style="gap:20px;">
+        <div class="card" style="padding:24px;">
+          <h3 style="font-size:1rem;">¿Cuánto tardan en lanzar una campaña?</h3>
+          <p style="margin-top:10px;font-size:0.9rem;">Entre 48 y 72 horas desde que aprobás el plan. La landing page tarda 5 días hábiles si es desde cero.</p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <h3 style="font-size:1rem;">¿Cuál es la inversión mínima en publicidad?</h3>
+          <p style="margin-top:10px;font-size:0.9rem;">Recomendamos un mínimo de USD 300/mes en pauta para tener datos significativos. Con menos, los resultados son lentos.</p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <h3 style="font-size:1rem;">¿Trabajan con cualquier tipo de negocio?</h3>
+          <p style="margin-top:10px;font-size:0.9rem;">Nos especializamos en servicios, e-commerce y negocios locales. Si no somos la opción ideal para vos, te lo decimos honestamente.</p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <h3 style="font-size:1rem;">¿Qué incluye la gestión mensual?</h3>
+          <p style="margin-top:10px;font-size:0.9rem;">Gestión diaria de campañas, reporte semanal, optimizaciones, nuevas creatividades y acceso directo a tu especialista por WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="logo">Agency<span>Lead</span></a><p>Generamos clientes reales para negocios reales.</p></div>
+        <div class="footer-col"><h4>Páginas</h4><a href="servicios.html">Servicios</a><a href="nosotros.html">Nosotros</a><a href="portafolio.html">Portafolio</a><a href="contacto.html">Contacto</a></div>
+        <div class="footer-col"><h4>Contacto</h4><a href="https://wa.me/595976261267" target="_blank">WhatsApp</a><a href="mailto:hola@agencylead.com">hola@agencylead.com</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2025 AgencyLead.</span><span>Resultados reales 🚀</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
