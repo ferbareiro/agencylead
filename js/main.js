@@ -2,6 +2,11 @@
 // AGENCYLEAD — main.js
 // ============================================
 
+// --- EmailJS config ---
+const EMAILJS_SERVICE_ID  = 'service_rs3sgpo';
+const EMAILJS_TEMPLATE_ID = 'xq9xqgm';
+const EMAILJS_PUBLIC_KEY  = '-QkLUyFo_yuDCYU2V';
+
 // --- Menú hamburguesa ---
 const hamburger = document.getElementById('hamburger');
 const navMobile = document.getElementById('navMobile');
@@ -11,7 +16,6 @@ if (hamburger && navMobile) {
     hamburger.classList.toggle('open');
     navMobile.classList.toggle('open');
   });
-  // Cerrar al hacer click en un link
   navMobile.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
@@ -24,46 +28,72 @@ if (hamburger && navMobile) {
 const navbar = document.getElementById('navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 60) {
-      navbar.style.padding = '10px 0';
-    } else {
-      navbar.style.padding = '18px 0';
-    }
+    navbar.style.padding = window.scrollY > 60 ? '10px 0' : '18px 0';
   });
 }
 
 // --- Formulario de contacto ---
 const contactForm = document.getElementById('contactForm');
 const successMsg  = document.getElementById('successMsg');
+const submitBtn   = contactForm?.querySelector('button[type="submit"]');
 
 if (contactForm && successMsg) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const nombre = contactForm.querySelector('input[type="text"]').value.trim();
-    const tel    = contactForm.querySelector('input[type="tel"]').value.trim();
-    const negocio = contactForm.querySelectorAll('input[type="text"]')[1]?.value.trim() || '';
 
-    if (!nombre || !tel) return;
+    // Recoger todos los campos
+    const fields   = contactForm.querySelectorAll('input, select, textarea');
+    const nombre   = fields[0]?.value.trim();
+    const telefono = fields[1]?.value.trim();
+    const email    = fields[2]?.value.trim();
+    const negocio  = fields[3]?.value.trim();
+    const servicio = fields[4]?.value;
+    const presupuesto = fields[5]?.value;
+    const mensaje  = fields[6]?.value.trim();
 
-    // Armar mensaje para WhatsApp
-    const msg = encodeURIComponent(
-      `Hola! Me llamo ${nombre}.\n` +
-      `Mi negocio es: ${negocio}\n` +
-      `Quiero saber cómo conseguir más clientes.`
-    );
+    if (!nombre || !telefono || !negocio) {
+      alert('Por favor completá los campos obligatorios: nombre, WhatsApp y negocio.');
+      return;
+    }
 
-    // Mostrar mensaje de éxito
-    contactForm.style.display = 'none';
-    successMsg.style.display  = 'block';
+    // Estado de carga
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
 
-    // Abrir WhatsApp luego de 1 segundo
-    setTimeout(() => {
-      window.open(`https://wa.me/595976261267?text=${msg}`, '_blank');
-    }, 1000);
+    const templateParams = {
+      nombre,
+      telefono,
+      email:      email      || '(no ingresado)',
+      negocio,
+      servicio:   servicio   || '(no seleccionado)',
+      presupuesto: presupuesto || '(no seleccionado)',
+      mensaje:    mensaje    || '(sin mensaje)',
+    };
+
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
+
+      // Éxito — mostrar mensaje y abrir WhatsApp
+      contactForm.style.display = 'none';
+      successMsg.style.display  = 'block';
+
+      const waMsg = encodeURIComponent(
+        `Hola! Me llamo ${nombre}.\nMi negocio es: ${negocio}\nQuiero saber cómo conseguir más clientes.`
+      );
+      setTimeout(() => {
+        window.open(`https://wa.me/5491100000000?text=${waMsg}`, '_blank');
+      }, 1200);
+
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      alert('Hubo un error al enviar. Por favor escribinos directo por WhatsApp.');
+      submitBtn.textContent = 'Enviar y recibir diagnóstico →';
+      submitBtn.disabled = false;
+    }
   });
 }
 
-// --- Animación suave al hacer scroll (fade-in) ---
+// --- Animación fade-in en cards ---
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -75,8 +105,8 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.card').forEach(card => {
-  card.style.opacity   = '0';
-  card.style.transform = 'translateY(24px)';
+  card.style.opacity    = '0';
+  card.style.transform  = 'translateY(24px)';
   card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(card);
 });
