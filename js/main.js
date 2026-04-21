@@ -4,7 +4,7 @@
 
 // --- EmailJS config ---
 const EMAILJS_SERVICE_ID  = 'service_rs3sgpo';
-const EMAILJS_TEMPLATE_ID = 'xq9xqgm';
+const EMAILJS_TEMPLATE_ID = 'template_55cc55s';
 const EMAILJS_PUBLIC_KEY  = '-QkLUyFo_yuDCYU2V';
 // --- Menú hamburguesa ---
 const hamburger = document.getElementById('hamburger');
