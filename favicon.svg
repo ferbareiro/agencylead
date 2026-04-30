@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AgencyLead favicon">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f6fff" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0b0b12" />
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#ring)" opacity="0.18" />
+  <path d="M20 46l9.2-28h5.6L44 46h-5.8l-1.8-5.8H27.4L25.6 46zm8.8-10.2h6l-3-9.8z" fill="#ffffff"/>
+  <path d="M47 19h5v18.2h-9.6V19h5v13.9H52v4.3h-5z" fill="#d9c2ff"/>
+</svg>

@@ -3,373 +3,451 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgencyLead — Clientes para tu negocio, sin excusas</title>
-  <meta name="description" content="Agencia de marketing digital especializada en landing pages, Meta Ads y embudos de venta. Generamos clientes reales para tu negocio." />
+  <title>AgencyLead - Sistema digital para captar clientes</title>
+  <meta name="description" content="AgencyLead crea sistemas de captacion con anuncios, landing pages y automatizacion para convertir trafico en clientes reales." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">Agency<span>Lead</span></a>
-      <div class="nav-links">
-        <a href="servicios.html">Servicios</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="portafolio.html">Portafolio</a>
-        <a href="contacto.html" class="btn btn-primary nav-cta">Quiero clientes</a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-    <div class="nav-mobile" id="navMobile">
-      <a href="servicios.html">Servicios</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="portafolio.html">Portafolio</a>
-      <a href="contacto.html">Quiero clientes →</a>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section id="hero" style="padding-top: 160px; padding-bottom: 120px; position: relative; overflow: hidden;">
-    <!-- Imagen de fondo tecnológica -->
-    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80');background-size:cover;background-position:center;opacity:0.07;pointer-events:none;"></div>
-    <!-- Glow de fondo -->
-    <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,#7c3aed18 0%,transparent 70%);pointer-events:none;"></div>
-
-    <div class="container" style="position:relative;">
-      <div style="display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 48px; max-width: 1000px; margin: 0 auto;">
-        <div>
-          <div class="badge">🚀 Agencia de resultados, no de promesas</div>
-          <h1>
-            Convertimos tu inversión en<br>
-            <span class="text-accent">clientes reales</span> para tu negocio
-          </h1>
-          <p style="margin-top: 24px; font-size: 1.2rem; max-width: 520px;">
-            Diseñamos landing pages que venden, corremos anuncios en Meta que convierten y armamos embudos que trabajan mientras vos dormís.
-          </p>
-          <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
-            <a href="contacto.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 32px;">
-              Quiero más clientes →
-            </a>
-            <a href="portafolio.html" class="btn btn-outline">
-              Ver resultados reales
-            </a>
-          </div>
-          <p style="margin-top: 24px; font-size: 0.88rem; color: #9490a8;">
-            Sin contratos largos &nbsp;·&nbsp; Resultados en 30 días &nbsp;·&nbsp; Atención directa
-          </p>
+  <div class="site-shell">
+    <nav class="navbar" id="navbar">
+      <div class="container nav-shell">
+        <a href="index.html" class="logo">Agency<span>Lead</span></a>
+        <div class="nav-links">
+          <a href="#servicios">Servicios</a>
+          <a href="#sistema">Sistema</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#proceso">Proceso</a>
+          <a href="contacto.html" class="btn btn-primary nav-cta">Escribinos</a>
         </div>
-        <!-- Mockup laptop -->
-        <div style="width:340px;flex-shrink:0;position:relative;">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80"
-            alt="Dashboard métricas"
-            style="width:100%;border-radius:16px;border:1px solid #ffffff15;box-shadow:0 24px 64px #7c3aed33;" />
-          <!-- Badge flotante -->
-          <div style="position:absolute;bottom:-16px;left:-16px;background:var(--color-card);border:1px solid #7c3aed55;border-radius:12px;padding:12px 18px;display:flex;align-items:center;gap:10px;">
-            <div style="width:36px;height:36px;background:#7c3aed;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;">📈</div>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="nav-mobile" id="navMobile">
+        <a href="#servicios">Servicios</a>
+        <a href="#sistema">Sistema</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="contacto.html">Escribinos</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-home hero-remodel">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-noise"></div>
+        <div class="hero-orb hero-orb-left"></div>
+        <div class="hero-orb hero-orb-right"></div>
+
+        <div class="container hero-remodel-inner">
+          <div class="hero-remodel-copy">
+            <div class="eyebrow-pill">Sistema digital para captar y convertir</div>
+            <h1>
+              Todo lo que tu negocio necesita para
+              <span class="headline-accent">crecer en digital</span>
+              sin improvisar
+            </h1>
+            <p class="hero-lead">
+              Estrategia, anuncios, landing pages y seguimiento conectados como una sola maquina de conversion. Menos ruido, mas claridad y mejores clientes.
+            </p>
+
+            <div class="hero-actions">
+              <a href="contacto.html" class="btn btn-primary">Quiero un sistema de ventas</a>
+              <a href="#servicios" class="btn btn-outline">Ver estructura</a>
+            </div>
+
+            <div class="hero-microproof">
+              <span>+50 cuentas gestionadas</span>
+              <span>48h para activar una campana</span>
+              <span>ROAS promedio 3.8x</span>
+            </div>
+          </div>
+
+          <div class="hero-command" data-tilt-card>
+            <div class="command-panel command-panel-main">
+              <div class="command-header">
+                <div>
+                  <span class="command-kicker">AgencyLead Operating View</span>
+                  <strong>Centro de crecimiento</strong>
+                </div>
+                <div class="command-status">
+                  <span class="command-status-dot"></span>
+                  <span>Activo</span>
+                </div>
+              </div>
+
+              <div class="command-chart-card">
+                <div class="command-metrics">
+                  <div class="command-metric">
+                    <span>Leads</span>
+                    <strong>124</strong>
+                  </div>
+                  <div class="command-metric">
+                    <span>CPL</span>
+                    <strong>$6.40</strong>
+                  </div>
+                  <div class="command-metric">
+                    <span>Conv.</span>
+                    <strong>18%</strong>
+                  </div>
+                </div>
+
+                <div class="command-chart">
+                  <div class="command-chart-grid"></div>
+                  <div class="command-chart-area"></div>
+                  <div class="command-chart-line"></div>
+                  <span class="command-point point-a"></span>
+                  <span class="command-point point-b"></span>
+                  <span class="command-point point-c"></span>
+                  <span class="command-point point-d"></span>
+                </div>
+
+                <div class="command-chart-labels">
+                  <span>Semana 1</span>
+                  <span>Semana 2</span>
+                  <span>Semana 3</span>
+                  <span>Semana 4</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="command-panel command-panel-floating floating-a">
+              <span class="mini-label">Embudo activo</span>
+              <strong>Ads -> Landing -> WhatsApp</strong>
+              <div class="mini-bars">
+                <span style="height: 88%"></span>
+                <span style="height: 64%"></span>
+                <span style="height: 41%"></span>
+              </div>
+            </div>
+
+            <div class="command-panel command-panel-floating floating-b">
+              <span class="mini-label">Rendimiento</span>
+              <strong>3.8x</strong>
+              <small>retorno medio en campanas optimizadas</small>
+            </div>
+
+            <div class="command-panel command-panel-floating floating-c">
+              <span class="mini-label">Pipeline</span>
+              <div class="mini-flow">
+                <span class="flow-node active">Ads</span>
+                <span class="flow-node active">LP</span>
+                <span class="flow-node active">WA</span>
+                <span class="flow-node">Close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics-band-section">
+        <div class="container">
+          <div class="metrics-band">
+            <div class="metric-band-card">
+              <span class="metric-label">Clientes activos</span>
+              <strong>+50</strong>
+            </div>
+            <div class="metric-band-card">
+              <span class="metric-label">Tiempo de lanzamiento</span>
+              <strong>48h</strong>
+            </div>
+            <div class="metric-band-card">
+              <span class="metric-label">Conversion de landing</span>
+              <strong>18%</strong>
+            </div>
+            <div class="metric-band-card">
+              <span class="metric-label">Renovacion promedio</span>
+              <strong>90%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="services-showcase">
+        <div class="container">
+          <div class="section-header premium-header">
+            <div class="eyebrow-pill">Servicios conectados</div>
+            <h2>Una estructura pensada para que todo empuje en la misma direccion</h2>
+            <p>En vez de vender piezas sueltas, presentamos un sistema completo. Cada bloque tiene una funcion clara dentro del crecimiento.</p>
+          </div>
+
+          <div class="service-mosaic">
+            <article class="mosaic-card mosaic-card-feature">
+              <div class="mosaic-glow"></div>
+              <div class="mosaic-tag">Servicio estrella</div>
+              <h3>Sistema de ventas digital</h3>
+              <p>La operacion completa: estrategia, anuncios, landing, automatizacion y seguimiento trabajando juntos como una sola maquina de conversion.</p>
+              <ul class="mosaic-list">
+                <li>Diagnostico y posicionamiento comercial</li>
+                <li>Landing page de alta conversion</li>
+                <li>Campanas Meta Ads gestionadas</li>
+                <li>Flujo de seguimiento y cierre</li>
+                <li>Lectura de datos para escalar</li>
+              </ul>
+            </article>
+
+            <article class="mosaic-card">
+              <div class="mosaic-icon">01</div>
+              <h3>Meta Ads con performance</h3>
+              <p>Campanas rentables desde el primer dia, con audiencias claras, creatividades precisas y optimizacion continua.</p>
+            </article>
+
+            <article class="mosaic-card">
+              <div class="mosaic-icon">02</div>
+              <h3>Landing pages que convierten</h3>
+              <p>Paginas pensadas para reducir friccion, aclarar oferta y empujar una accion concreta.</p>
+            </article>
+
+            <article class="mosaic-card">
+              <div class="mosaic-icon">03</div>
+              <h3>Contenido con intencion</h3>
+              <p>Creatividad orientada a negocio. Cada pieza existe para atraer, calificar o cerrar.</p>
+            </article>
+
+            <article class="mosaic-card">
+              <div class="mosaic-icon">04</div>
+              <h3>Consultoria y direccion</h3>
+              <p>Orden estrategico para decidir donde poner el foco, que cortar y que escalar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sistema" class="system-section">
+        <div class="container system-grid">
+          <div class="system-copy">
+            <div class="eyebrow-pill">Sistema AgencyLead</div>
+            <h2>La web tenia que verse como trabaja la agencia: precisa, conectada y con criterio.</h2>
+            <p class="mt-24">Por eso la remodelacion deja atras la sensacion de plantilla simple. Ahora la pagina vende mejor porque se siente mas solida, mas confiable y mejor dirigida visualmente.</p>
+
+            <div class="system-notes mt-32">
+              <div class="system-note">
+                <strong>Direccion de arte</strong>
+                <span>Patron sutil, glow controlado, bloques grandes y un ritmo visual mas serio.</span>
+              </div>
+              <div class="system-note">
+                <strong>Jerarquia mejor resuelta</strong>
+                <span>Menos texto, titulares mas fuertes y contenido comprimido donde antes habia relleno.</span>
+              </div>
+              <div class="system-note">
+                <strong>Prueba visual mas premium</strong>
+                <span>Los datos ya no aparecen como widgets aislados, sino como parte de un sistema vivo.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="system-board">
+            <div class="system-board-bg"></div>
+            <div class="system-window system-window-wide">
+              <div class="window-head">
+                <span>Flujo de adquisicion</span>
+                <strong>Captacion en tiempo real</strong>
+              </div>
+              <div class="system-layers">
+                <div class="layer-card layer-card-top">
+                  <span class="mini-label">Entrada</span>
+                  <strong>1.240 clics</strong>
+                </div>
+                <div class="layer-card layer-card-mid">
+                  <span class="mini-label">Conversion</span>
+                  <strong>124 leads</strong>
+                </div>
+                <div class="layer-card layer-card-low">
+                  <span class="mini-label">Cierre</span>
+                  <strong>32 oportunidades</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="system-window system-window-small">
+              <span class="mini-label">ROAS promedio</span>
+              <strong>3.8x</strong>
+            </div>
+
+            <div class="system-window system-window-bars">
+              <span class="mini-label">Canales</span>
+              <div class="bar-matrix">
+                <span style="height: 56%"></span>
+                <span style="height: 80%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 92%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="process-section">
+        <div class="container">
+          <div class="section-header premium-header">
+            <div class="eyebrow-pill">Proceso de trabajo</div>
+            <h2>Una secuencia corta, elegante y enfocada en resultado</h2>
+          </div>
+
+          <div class="process-rail">
+            <article class="process-step-card">
+              <div class="process-step-number">01</div>
+              <h3>Diagnostico</h3>
+              <p>Detectamos el cuello de botella y el mejor punto de entrada para empezar a crecer.</p>
+            </article>
+            <article class="process-step-card">
+              <div class="process-step-number">02</div>
+              <h3>Arquitectura</h3>
+              <p>Conectamos oferta, anuncios, pagina y seguimiento en un flujo facil de entender.</p>
+            </article>
+            <article class="process-step-card">
+              <div class="process-step-number">03</div>
+              <h3>Lanzamiento</h3>
+              <p>Activamos campanas, medimos respuesta y ajustamos rapido con criterio de negocio.</p>
+            </article>
+            <article class="process-step-card">
+              <div class="process-step-number">04</div>
+              <h3>Escala</h3>
+              <p>Cuando algo funciona, lo empujamos con datos y una lectura comercial clara.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="about-section">
+        <div class="container about-grid">
+          <div class="about-panel">
+            <div class="eyebrow-pill">Nosotros</div>
+            <h2>Una agencia chica por estructura, fuerte por criterio y obsesionada con resultados.</h2>
+            <p class="mt-24">AgencyLead nace para resolver un problema simple: negocios buenos que no logran verse, vender y escalar en digital. Nuestro diferencial no es hablar mas fuerte, sino ordenar mejor todo el sistema.</p>
+
+            <div class="about-highlights mt-32">
+              <div class="about-highlight">
+                <strong>Direccion directa</strong>
+                <span>Sin capas innecesarias ni procesos lentos. Quien piensa la estrategia esta cerca de la ejecucion.</span>
+              </div>
+              <div class="about-highlight">
+                <strong>Lectura de negocio</strong>
+                <span>No nos interesan metricas decorativas. Miramos demanda, conversion y cierre.</span>
+              </div>
+              <div class="about-highlight">
+                <strong>Construccion de marca</strong>
+                <span>La percepcion importa. Por eso la experiencia visual y la performance tienen que avanzar juntas.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="about-card about-card-main">
+              <span class="mini-label">AgencyLead mindset</span>
+              <strong>Resultados, criterio y velocidad</strong>
+              <p>Una combinacion de estrategia, direccion visual y ejecucion enfocada para que cada negocio se vea mas solido y funcione mejor.</p>
+            </div>
+
+            <div class="about-card about-stat-card">
+              <span class="mini-label">Operando desde</span>
+              <strong>2023</strong>
+            </div>
+
+            <div class="about-card about-stat-card alt">
+              <span class="mini-label">Cuentas activas</span>
+              <strong>+50</strong>
+            </div>
+
+            <div class="about-card about-values-card">
+              <span class="mini-label">Principios</span>
+              <div class="values-stack">
+                <span>Claridad</span>
+                <span>Performance</span>
+                <span>Direccion</span>
+                <span>Conversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section">
+        <div class="container proof-grid">
+          <div class="proof-panel">
+            <div class="eyebrow-pill">Prueba social</div>
+            <h2>La confianza entra mejor cuando todo se ve mas resuelto.</h2>
+            <p class="mt-24">Una buena agencia no solo tiene que prometer resultados: tiene que verse como alguien que sabe ordenar crecimiento.</p>
+          </div>
+
+          <div class="proof-testimonials">
+            <article class="proof-quote">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p>"Por primera vez sentimos que el marketing estaba armado como un sistema. Todo se veia y se entendia mejor."</p>
+              <div class="testimonial-author">
+                <div class="avatar">MR</div>
+                <div class="author-info">
+                  <strong>Marcelo Rodriguez</strong>
+                  <span>Clinica dental</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="proof-quote">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p>"La pagina ahora transmite mucho mas nivel. Ya no parece una web armada rapido, parece una agencia bien posicionada."</p>
+              <div class="testimonial-author">
+                <div class="avatar">SL</div>
+                <div class="author-info">
+                  <strong>Sofia Lopez</strong>
+                  <span>E-commerce de indumentaria</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-panel cta-panel-premium">
             <div>
-              <div style="font-size:0.75rem;color:#9490a8;">ROI promedio</div>
-              <div style="font-size:1.1rem;font-weight:700;color:#fff;">3.8x</div>
+              <div class="eyebrow-pill">Siguiente paso</div>
+              <h2>Si el negocio se va a ver grande, el sistema tambien tiene que sentirse grande.</h2>
+              <p class="mt-16">Hablemos y ordenamos tu captacion para que la percepcion y el rendimiento crezcan al mismo tiempo.</p>
+            </div>
+            <div class="cta-actions">
+              <a href="https://wa.me/595976261267?text=Hola!%20Quiero%20mejorar%20la%20captacion%20de%20mi%20negocio" target="_blank" class="btn btn-primary">Escribinos por WhatsApp</a>
+              <a href="contacto.html" class="btn btn-outline">Ir al formulario</a>
             </div>
           </div>
         </div>
-      </div>
-      <style>
-        @media (max-width: 768px) {
-          #hero .container > div { grid-template-columns: 1fr !important; }
-          #hero lottie-player { display: none; }
-        }
-      </style>
+      </section>
+    </main>
 
-      <!-- Animación gráfico subiendo -->
-      <div style="display:flex;justify-content:center;margin-top:48px;">
-        <lottie-player
-          src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json"
-          background="transparent"
-          speed="1"
-          style="width: 180px; height: 80px;"
-          loop autoplay>
-        </lottie-player>
-      </div>
-
-      <!-- Stats rápidas -->
-      <div class="grid-4 mt-48" style="max-width: 860px; margin-top: 24px; margin-left: auto; margin-right: auto;">
-        <div class="card" style="text-align: center; padding: 28px 20px;">
-          <div class="stat-number">+50</div>
-          <div class="stat-label">Clientes activos atendidos</div>
-        </div>
-        <div class="card" style="text-align: center; padding: 28px 20px;">
-          <div class="stat-number">3.8x</div>
-          <div class="stat-label">Retorno promedio en publicidad</div>
-        </div>
-        <div class="card" style="text-align: center; padding: 28px 20px;">
-          <div class="stat-number">48h</div>
-          <div class="stat-label">Tiempo para lanzar tu campaña</div>
-        </div>
-        <div class="card" style="text-align: center; padding: 28px 20px;">
-          <div class="stat-number">90%</div>
-          <div class="stat-label">Clientes que renuevan con nosotros</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ===== PROBLEMA / SOLUCIÓN ===== -->
-  <section style="position:relative;">
-    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80');background-size:cover;background-position:center;opacity:0.04;pointer-events:none;"></div>
-    <div class="container" style="position:relative;">
-      <div class="grid-2" style="align-items: center; gap: 64px;">
-        <div>
-          <div class="badge">El problema que resolvemos</div>
-          <h2>Tu negocio es bueno.<br>El problema es que<br><span class="text-accent">nadie lo sabe.</span></h2>
-          <p style="margin-top: 20px;">
-            Tenés un producto o servicio que funciona, pero tus redes sociales no traccionan, tu sitio web no convierte y los anuncios que probaste fueron plata tirada. No es culpa tuya — es que nadie te enseñó a hacer marketing que venda de verdad.
-          </p>
-          <p style="margin-top: 16px;">
-            Nosotros nos encargamos de todo: la estrategia, los anuncios, la página de destino y el seguimiento. Vos solo atendés a los clientes que llegan.
-          </p>
-          <a href="contacto.html" class="btn btn-primary mt-32">Empezar ahora →</a>
-        </div>
-        <div>
-          <!-- Lista de problemas que resolvemos -->
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            <div class="card" style="display: flex; align-items: flex-start; gap: 16px; padding: 24px;">
-              <div style="font-size: 1.3rem; flex-shrink:0;">❌</div>
-              <div>
-                <strong style="color: #f1f0f5;">Anuncios que gastan y no venden</strong>
-                <p style="font-size:0.9rem; margin-top:4px;">Mal segmentados, sin creatividad que pare el scroll, sin página de destino que convierta.</p>
-              </div>
-            </div>
-            <div class="card" style="display: flex; align-items: flex-start; gap: 16px; padding: 24px;">
-              <div style="font-size: 1.3rem; flex-shrink:0;">❌</div>
-              <div>
-                <strong style="color: #f1f0f5;">Sitio web que no genera ni un contacto</strong>
-                <p style="font-size:0.9rem; margin-top:4px;">Lento, sin propuesta de valor clara, sin llamada a la acción. Un folleto digital que nadie lee.</p>
-              </div>
-            </div>
-            <div class="card" style="display: flex; align-items: flex-start; gap: 16px; padding: 24px; border-color: #7c3aed55;">
-              <div style="font-size: 1.3rem; flex-shrink:0;">✅</div>
-              <div>
-                <strong style="color: #a855f7;">Con AgencyLead: sistema completo que genera clientes</strong>
-                <p style="font-size:0.9rem; margin-top:4px;">Anuncio → Landing page → Contacto → Venta. Todo conectado, todo medido.</p>
-              </div>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">Agency<span>Lead</span></a>
+            <p>Performance, claridad y una presencia digital que hace ver a tu negocio mas serio desde el primer vistazo.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Paginas</h4>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="portafolio.html">Portafolio</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <a href="https://wa.me/595976261267" target="_blank">WhatsApp</a>
+            <a href="mailto:hola@agencylead.com">hola@agencylead.com</a>
+            <a href="https://instagram.com/a.gencylead" target="_blank">Instagram</a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ===== SERVICIOS (resumen) ===== -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Nuestros servicios</div>
-        <h2>Todo lo que necesitás para <span class="text-accent">vender más</span></h2>
-        <p>No vendemos piezas sueltas. Armamos el sistema completo para que tu negocio genere clientes de forma predecible.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div class="service-icon">🎯</div>
-          <h3>Landing Pages que convierten</h3>
-          <p style="margin-top: 12px;">Páginas diseñadas con un solo objetivo: convertir visitantes en contactos. Carga rápida, copy persuasivo y CTA claro.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card">
-          <div class="service-icon">📣</div>
-          <h3>Meta Ads con resultados</h3>
-          <p style="margin-top: 12px;">Campañas en Facebook e Instagram con segmentación quirúrgica. Llegamos exactamente a quienes necesitan lo que ofrecés.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card">
-          <div class="service-icon">⚙️</div>
-          <h3>Embudos de venta</h3>
-          <p style="margin-top: 12px;">Sistemas automatizados que capturan, nutren y convierten prospectos. Tu equipo de ventas trabajando en piloto automático.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card">
-          <div class="service-icon">🧠</div>
-          <h3>Consultoría de marketing</h3>
-          <p style="margin-top: 12px;">Analizamos tu negocio, tu competencia y tu mercado. Te decimos exactamente qué hacer para crecer, sin rodeos.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card">
-          <div class="service-icon">📊</div>
-          <h3>Google Ads</h3>
-          <p style="margin-top: 12px;">Aparecé justo cuando tu cliente ideal te está buscando. Campañas de búsqueda optimizadas para el costo por lead más bajo posible.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card">
-          <div class="service-icon">✉️</div>
-          <h3>Email marketing</h3>
-          <p style="margin-top: 12px;">Secuencias de correos que convierten leads fríos en clientes listos para comprar. El canal con mejor retorno de inversión.</p>
-          <a href="servicios.html" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
-        </div>
-        <div class="card" style="border-color: #7c3aed55;">
-          <div class="service-icon" style="background:#a855f722;border-color:#a855f744;">🎨</div>
-          <h3>Branding &amp; Identidad visual</h3>
-          <p style="margin-top: 12px;">Logo, manual de marca, paleta de colores, tipografías, banners y materiales digitales. Tu negocio con imagen profesional que genera confianza.</p>
-          <a href="servicios.html#branding" style="display: inline-block; margin-top: 20px; color: #a855f7; font-weight: 600; font-size: 0.9rem;">Ver más →</a>
+        <div class="footer-bottom">
+          <span>&copy; 2026 AgencyLead. Todos los derechos reservados.</span>
+          <span>Disenado para verse y convertir mejor.</span>
         </div>
       </div>
-
-      <div class="text-center mt-48">
-        <a href="servicios.html" class="btn btn-outline">Ver todos los servicios</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ===== PROCESO ===== -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Cómo trabajamos</div>
-        <h2>De cero a clientes <span class="text-accent">en 4 pasos</span></h2>
-        <p>Un proceso probado que hemos repetido con más de 80 negocios. Sin vueltas, sin demoras.</p>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 24px; max-width: 760px; margin: 0 auto;">
-        <div class="card" style="display: flex; align-items: flex-start; gap: 24px;">
-          <div class="step-number">1</div>
-          <div>
-            <h3>Diagnóstico gratuito</h3>
-            <p style="margin-top: 8px;">Analizamos tu negocio, tu mercado y tu competencia. En una llamada de 30 minutos identificamos exactamente por dónde se te escapan los clientes y qué hay que hacer primero.</p>
-          </div>
-        </div>
-        <div class="card" style="display: flex; align-items: flex-start; gap: 24px;">
-          <div class="step-number">2</div>
-          <div>
-            <h3>Estrategia a medida</h3>
-            <p style="margin-top: 8px;">No usamos plantillas genéricas. Armamos un plan específico para tu nicho, tu presupuesto y tus objetivos. Sabés exactamente qué vamos a hacer y por qué.</p>
-          </div>
-        </div>
-        <div class="card" style="display: flex; align-items: flex-start; gap: 24px;">
-          <div class="step-number">3</div>
-          <div>
-            <h3>Ejecución en 48 horas</h3>
-            <p style="margin-top: 8px;">Lanzamos tu campaña en menos de 48 horas desde que aprobás el plan. Landing page publicada, anuncios activos, sistema de seguimiento configurado.</p>
-          </div>
-        </div>
-        <div class="card" style="display: flex; align-items: flex-start; gap: 24px;">
-          <div class="step-number">4</div>
-          <div>
-            <h3>Optimización continua</h3>
-            <p style="margin-top: 8px;">Medimos todo, todos los días. Ajustamos lo que no funciona, escalamos lo que sí. Reportes claros cada semana para que siempre sepas en qué se gasta cada peso.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ===== TESTIMONIOS ===== -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Lo que dicen nuestros clientes</div>
-        <h2>Resultados que <span class="text-accent">hablan solos</span></h2>
-        <p>No pedimos que confíes en nuestra palabra. Acá están las personas que ya pasaron por el proceso.</p>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p style="color: #f1f0f5; font-size: 1rem; line-height: 1.7;">"En el primer mes conseguimos 47 consultas de clientes nuevos. Antes teníamos 3 o 4 por mes si teníamos suerte. AgencyLead cambió completamente cómo funciona nuestro negocio."</p>
-          <div class="testimonial-author">
-            <div class="avatar">MR</div>
-            <div class="author-info">
-              <strong>Marcelo Rodríguez</strong>
-              <span>Clínica dental — Buenos Aires</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p style="color: #f1f0f5; font-size: 1rem; line-height: 1.7;">"Probé con otras agencias antes y siempre terminaba pagando por likes y seguidores. Con AgencyLead por primera vez veo plata de verdad entrando. El ROI del primer trimestre fue de 4.2x."</p>
-          <div class="testimonial-author">
-            <div class="avatar">SL</div>
-            <div class="author-info">
-              <strong>Sofía López</strong>
-              <span>E-commerce de ropa — Córdoba</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="stars">★★★★★</div>
-          <p style="color: #f1f0f5; font-size: 1rem; line-height: 1.7;">"La landing page que nos hicieron convierte al 18%. Antes teníamos una página hecha con un constructor gratuito que no generaba absolutamente nada. La diferencia es abismal."</p>
-          <div class="testimonial-author">
-            <div class="avatar">CP</div>
-            <div class="author-info">
-              <strong>Carlos Pereira</strong>
-              <span>Consultor inmobiliario — Montevideo</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ===== CTA FINAL ===== -->
-  <section style="text-align: center;">
-    <div class="container">
-      <div style="max-width: 640px; margin: 0 auto;">
-        <div class="badge">¿Listo para crecer?</div>
-        <h2>Tu próximo cliente está<br><span class="text-accent">a un anuncio de distancia</span></h2>
-        <p style="margin-top: 20px; font-size: 1.1rem;">Hablemos por WhatsApp. En 15 minutos te decimos si podemos ayudarte y cómo. Sin compromiso, sin venta agresiva.</p>
-        <div style="margin-top: 40px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="https://wa.me/595976261267?text=Hola!%20Quiero%20saber%20cómo%20conseguir%20más%20clientes%20para%20mi%20negocio" target="_blank" class="btn btn-whatsapp">
-            💬 Hablar por WhatsApp
-          </a>
-          <a href="contacto.html" class="btn btn-outline">Completar formulario</a>
-        </div>
-        <p style="margin-top: 20px; font-size: 0.85rem;">Respondemos en menos de 2 horas en horario laboral</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo">Agency<span>Lead</span></a>
-          <p>Generamos clientes reales para negocios reales. Sin humo, sin métricas de vanidad. Solo resultados.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Páginas</h4>
-          <a href="servicios.html">Servicios</a>
-          <a href="nosotros.html">Sobre nosotros</a>
-          <a href="portafolio.html">Portafolio</a>
-          <a href="contacto.html">Contacto</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <a href="https://wa.me/595976261267" target="_blank">WhatsApp</a>
-          <a href="mailto:hola@agencylead.com">hola@agencylead.com</a>
-          <a href="https://instagram.com/a.gencylead" target="_blank">Instagram</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2025 AgencyLead. Todos los derechos reservados.</span>
-        <span>Hecho con foco en resultados 🚀</span>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

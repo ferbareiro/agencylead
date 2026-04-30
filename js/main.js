@@ -102,3 +102,26 @@ document.querySelectorAll('.card').forEach(card => {
   card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(card);
 });
+
+// --- Efecto 3D suave en el visual del hero ---
+document.querySelectorAll('[data-tilt-card]').forEach((tiltCard) => {
+  const heroDevice = tiltCard.querySelector('.hero-device') || tiltCard.querySelector('.command-panel-main');
+
+  if (!heroDevice) return;
+
+  tiltCard.addEventListener('mousemove', (event) => {
+    const rect = tiltCard.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    const rotateY = (x - 0.5) * 14;
+    const rotateX = (0.5 - y) * 10;
+
+    heroDevice.style.transform = `rotateY(${rotateY - 6}deg) rotateX(${rotateX + 3}deg)`;
+  });
+
+  tiltCard.addEventListener('mouseleave', () => {
+    heroDevice.style.transform = heroDevice.classList.contains('command-panel-main')
+      ? 'rotateY(-10deg) rotateX(5deg)'
+      : 'rotateY(-12deg) rotateX(6deg)';
+  });
+});
